@@ -63,6 +63,18 @@
         };
     };
 
+    behaviors {
+        hm: HOMEROW_MOD {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MOD";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            quick-tap-ms = <0>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -85,10 +97,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-               &kp Q        &kp W       &kp F               &kp P          &kp B      &kp J    &kp L        &kp U                &kp Y       &kp SEMI
-               &mt LCTRL A  &mt LALT R  &mt LEFT_COMMAND S  &mt LSHFT T    &kp G      &kp M    &mt RSHFT N  &mt RIGHT_COMMAND E  &mt RALT I  &mt RCTRL O
-&kp BACKSPACE  &kp Z        &kp X       &kp C               &kp D          &kp V      &kp K    &kp H        &kp COMMA            &kp DOT     &kp FSLH     &kp BSLH
-                                        &kp DEL             &lt NAV SPACE  &kp TAB    &kp ESC  &lt SYM RET  &kp BSPC
+               &kp Q        &kp W           &kp F            &kp P             &kp B      &kp J    &kp L              &kp U             &kp Y            &kp SEMI
+               &hm LCTRL A  &hm LEFT_ALT R  &hm LEFT_META S  &hm LEFT_SHIFT T  &kp G      &kp M    &hm RIGHT_SHIFT N  &hm RIGHT_META E  &hm RIGHT_ALT I  &hm RCTRL O
+&kp BACKSPACE  &kp Z        &kp X           &kp C            &kp D             &kp V      &kp K    &kp H              &kp COMMA         &kp DOT          &kp FSLH     &kp BSLH
+                                            &kp DEL          &lt NAV SPACE     &kp TAB    &kp ESC  &lt SYM RET        &kp BSPC
             >;
         };
 
