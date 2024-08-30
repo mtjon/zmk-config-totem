@@ -98,10 +98,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-               &kp Q        &kp W           &kp F            &kp P             &kp B      &kp J    &kp L              &kp U             &kp Y            &kp SEMI
-               &hm LCTRL A  &hm LEFT_ALT R  &hm LEFT_META S  &hm LEFT_SHIFT T  &kp G      &kp M    &hm RIGHT_SHIFT N  &hm RIGHT_META E  &hm RIGHT_ALT I  &hm RCTRL O
-&kp BACKSPACE  &kp Z        &kp X           &kp C            &kp D             &kp V      &kp K    &kp H              &kp COMMA         &kp DOT          &kp FSLH     &kp BSLH
-                                            &mo 1            &lt 1 SPACE       &kp TAB    &kp ESC  &lt 2 RET          &mo 4
+               &kp Q        &kp W           &kp F            &kp P             &kp B                       &kp J                         &kp L              &kp U             &kp Y            &kp SEMI
+               &hm LCTRL A  &hm LEFT_ALT R  &hm LEFT_META S  &hm LEFT_SHIFT T  &kp G                       &kp M                         &hm RIGHT_SHIFT N  &hm RIGHT_META E  &hm RIGHT_ALT I  &hm RCTRL O
+&kp BACKSPACE  &kp Z        &kp X           &kp C            &kp D             &kp V                       &kp K                         &kp H              &kp COMMA         &kp DOT          &kp FSLH     &kp BSLH
+                                            &mo 1            &lt 1 SPACE       &hm LA(LS(LEFT_GUI)) TAB    &hm LS(LA(LC(LEFT_GUI))) ESC  &lt 2 RET          &mo 4
             >;
         };
 
